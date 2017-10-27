@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="289.0" prefWidth="545.0" style="-fx-border-color: #2193F3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddUserController">
+   <children>
+      <JFXButton fx:id="back" alignment="CENTER" layoutX="419.0" layoutY="14.0" onAction="#onBack" prefHeight="49.0" prefWidth="112.0" style="-fx-background-color: #2193F3;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#363636" glyphName="CHEVRON_CIRCLE_LEFT" size="25" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="14.0" layoutY="39.0" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: #363636; -fx-text-inner-color: white;" text="Nick">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXTextField>
+      <TextField fx:id="nickField" layoutX="159.0" layoutY="46.0" promptText="nick" />
+      <PasswordField fx:id="passField" layoutX="159.0" layoutY="97.0" promptText="password" />
+      <TextField fx:id="emailField" layoutX="159.0" layoutY="149.0" prefHeight="25.0" prefWidth="336.0" promptText="e-mail" />
+      <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="14.0" layoutY="141.0" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: #363636; -fx-text-inner-color: white;" text="Email">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="14.0" layoutY="90.0" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: #363636; -fx-text-inner-color: white;" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <FontAwesomeIconView fx:id="tick3" fill="#00ff29" glyphName="CHECK_CIRCLE_ALT" layoutX="505.0" layoutY="170.0" size="20" visible="false" />
+      <FontAwesomeIconView fx:id="tick2" fill="#00ff29" glyphName="CHECK_CIRCLE_ALT" layoutX="318.0" layoutY="118.0" size="20" text="" visible="false" />
+      <FontAwesomeIconView fx:id="tick1" fill="#00ff29" glyphName="CHECK_CIRCLE_ALT" layoutX="318.0" layoutY="66.0" size="20" visible="false" />
+      <FontAwesomeIconView fill="RED" glyphName="TIMES_CIRCLE_ALT" layoutX="318.0" layoutY="65.0" size="20" fx:id="x1" />
+      <FontAwesomeIconView fill="RED" glyphName="TIMES_CIRCLE_ALT" layoutX="318.0" layoutY="116.0" size="20" fx:id="x2" />
+      <FontAwesomeIconView fill="RED" glyphName="TIMES_CIRCLE_ALT" layoutX="505.0" layoutY="169.0" size="20" fx:id="x3" />
+      <JFXButton fx:id="create" alignment="CENTER" layoutX="14.0" layoutY="224.0" onAction="#onCreate" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #2193F3;" text="Create" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView fill="#363636" glyphName="CHECK_CIRCLE_ALT" size="25" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

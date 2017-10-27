@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="675.0" prefWidth="1015.0" style="-fx-border-color: #2193F3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PrincipalController">
+   <children>
+      <Separator layoutX="189.0" orientation="VERTICAL" prefHeight="675.0" prefWidth="0.0" style="-fx-background-color: #50514F;" />
+      <AnchorPane layoutX="195.0" layoutY="70.0" prefHeight="200.0" prefWidth="821.0" style="-fx-background-color: #50514F;">
+         <children>
+            <JFXTextField alignment="CENTER" editable="false" focusColor="#cdcdcd" focusTraversable="false" labelFloat="true" layoutX="25.0" layoutY="36.0" prefHeight="58.0" prefWidth="450.0" style="-fx-text-inner-color: grey; -fx-border-color: white; -fx-border-width: 3;" text="Mister Football" unFocusColor="#cdcdcd">
+               <font>
+                  <Font name="Sitka Text" size="50.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="-8.0" layoutY="-8.0" prefHeight="688.0" prefWidth="201.0">
+         <children>
+            <JFXTextField fx:id="user" alignment="CENTER" editable="false" focusColor="#dab5b5" focusTraversable="false" layoutX="25.0" layoutY="213.0" prefHeight="49.0" prefWidth="150.0" text="User" unFocusColor="#bf9c9c">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXTextField>
+            <ImageView fx:id="imgUser" fitHeight="150.0" fitWidth="161.0" layoutX="25.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../res/images/user.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="money" alignment="BASELINE_LEFT" buttonType="RAISED" disable="true" graphicTextGap="20.0" layoutX="25.0" layoutY="295.0" prefHeight="49.0" prefWidth="150.0" style="-fx-background-color: #50514F;" text="xxxxxx" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView glyphName="DOLLAR" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="45.0" layoutY="609.0" onAction="#onContactUs" prefHeight="36.0" prefWidth="111.0" style="-fx-border-color: #50514F; -fx-border-width: 3;" text="Contact Us" textFill="#50514f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="22.0" layoutY="584.0" prefHeight="8.0" prefWidth="156.0" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="logOut" alignment="CENTER" layoutX="874.0" layoutY="14.0" onAction="#onLogOut" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: #2193F3;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_LEFT" size="25" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="207.0" layoutY="367.0" onAction="#onMarket" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #2193F3;" text="BIDDING" textFill="WHITE">
+         <graphic>
+            <MaterialDesignIconView glyphName="CHART_LINE" size="75" text="" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="addUser" contentDisplay="GRAPHIC_ONLY" layoutX="627.0" layoutY="367.0" onAction="#onAddUser" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #2193F3;" text="Add User">
+         <graphic>
+            <MaterialDesignIconView glyphName="ACCOUNT_PLUS" size="75" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="deleteUser" contentDisplay="GRAPHIC_ONLY" layoutX="819.0" layoutY="367.0" onAction="#onDeleteUser" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #2193F3;" text="Delete User">
+         <graphic>
+            <MaterialDesignIconView glyphName="ACCOUNT_REMOVE" size="75" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="398.0" layoutY="367.0" onAction="#onSellPlayer" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #2193F3;" text="TRADE UP" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="TAG" size="75" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="type" alignment="BASELINE_LEFT" buttonType="RAISED" disable="true" graphicTextGap="20.0" layoutX="207.0" layoutY="14.0" prefHeight="49.0" prefWidth="136.0" style="-fx-background-color: #50514F;" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="598.0" layoutY="284.0" orientation="VERTICAL" prefHeight="387.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#onKeyPressed" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="325.0" prefWidth="425.0" style="-fx-border-color: #2193F3; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <JFXTextField fx:id="user" focusColor="#3c38eb" labelFloat="true" layoutX="67.0" layoutY="71.0" prefHeight="42.0" prefWidth="291.0" promptText="Email" unFocusColor="#2193f3" />
+      <JFXPasswordField fx:id="pass" focusColor="#3c38eb" labelFloat="true" layoutX="67.0" layoutY="149.0" prefHeight="42.0" prefWidth="291.0" promptText="Password" unFocusColor="#2193f3" />
+      <JFXButton fx:id="log" layoutX="67.0" layoutY="233.0" onAction="#logIn" prefHeight="42.0" prefWidth="127.0" style="-fx-background-color: #2193F3;" text="Login" />
+      <JFXTextField fx:id="errorOnLog" alignment="CENTER" editable="false" layoutX="220.0" layoutY="233.0" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: #484D6D; -fx-text-inner-color: white;" text="Error Login" visible="false" />
+   </children>
+</AnchorPane>
